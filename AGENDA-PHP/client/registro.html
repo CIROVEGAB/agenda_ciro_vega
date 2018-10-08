@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crea tu cuenta</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="login-container">
+            <div class="callout primary login">
+                <h4>Crea tu usuario</h4>
+                <div class="row align-center">
+                    <div class="small-9 columns">
+                        <label>Nombre
+                            <input type="text" id="nombre" required>
+                        </label>
+                    </div>
+                    <div class="small-9 columns">
+                        <label>Fecha de Nacimiento
+                            <input type="text" id="fecha_nacimiento" placeholder="yyyy-mm-dd" required>
+                        </label>
+                    </div>
+                    <div class="small-9 columns">
+                        <label>Correo
+                            <input type="email" id="correo" required>
+                        </label>
+                    </div>
+                    <div class="small-9 columns">
+                        <label>Contraseña
+                            <input type="password" id="contrasena" required>
+                        </label>
+                    </div>
+                    <div class="small-9 columns btn-container">
+                        <button type="button" class="button" id="btn-enviar">Enviar</button>
+                    </div>
+                </div>
+                <p>Ya tienes una cuenta? <a href="index.html">Inicia Sesión!</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/register.js"></script>
+
+</body>
+</html>

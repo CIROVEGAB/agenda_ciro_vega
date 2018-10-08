@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Login
+        link(rel="shortcut icon", href="img/logout.png", type="image/png")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Kaushan+Script")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Kaushan+Script|Neucha")
+        link(rel="stylesheet", href="css/index.css")
+
+    body
+
+        .loginContainer
+            .loginTitle
+                p Inicio de Sesión
+            .fields-Container
+                input(type="text", id="user", placeholder="Usuario")
+                input(type="password", id="pass", placeholder="Contraseña")
+                button.loginButton(id="login") Ingresar
+                #message(style="display: none")
+
+        script(src="js/jquery.js")
+        script(src="js/index.js")

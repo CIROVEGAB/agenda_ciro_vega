@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Agenda
+        link(rel="shortcut icon", href="img/logout.png", type="image/png")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Kaushan+Script")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Kaushan+Script|Neucha")
+        link(rel="stylesheet", href="http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css")
+        link(rel="stylesheet", href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+        link(rel="stylesheet", href="css/fullcalendar.min.css")
+        link(rel="stylesheet", href="css/main.css")
+
+    body
+
+        .headerCalendar
+            p Mi Agenda Personal
+        .dataContainer
+            .calendarDataContainer
+                .mainCalendarContainer
+                    .calendarContainer
+                        .calendario
+            .formContainer
+                .formTitle
+                    p Programar Evento
+                .separator
+                .form-inputs
+                    input(type="text", id="titulo", placeholder="Nombre del evento")
+                    input(type="text", id="start_date", placeholder="Fecha de inicio")
+                    .eventDuration
+                        input.radio-input(type="checkbox", id="allDay")
+                        label.duration-label(for="allDay") Día Completo
+                    input(type="text", id="end_date", placeholder="Fecha Final")
+                    .form-group
+                        input.timepicker.hour-input.left(type="text", id="start_hour", placeholder="Hora de inicio")
+                        input.timepicker.hour-input.right(type="text", id="end_hour", placeholder="Hora Final")
+                    button.addButton(id="save") Añadir Evento
+                .delete(id="deleteEvent")
+                    .drop-event
+                        p Eliminar Evento
+                    img(src="img/delete.png", alt="Eliminar evento")
+                .logout-container
+                    img.logout-image(src="img/logout.png", alt="Logout")
+                    button.logoutText(id="logout") Cerrar Sesión
+
+        script(src="js/jquery.js")
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js")
+        script(src="http://momentjs.com/downloads/moment.min.js")
+        script(src="js/fullcalendar.min.js")
+        script(src="js/app.js")

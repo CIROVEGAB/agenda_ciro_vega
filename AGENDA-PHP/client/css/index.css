@@ -1,0 +1,35 @@
+
+body{
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{width: 30%}
+
+.login h4{
+    text-align: center;
+    color: #8B0913;
+}
+
+.login p{
+    text-align: center;
+}
+
+.login a{
+    color: #1c2bf7;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
